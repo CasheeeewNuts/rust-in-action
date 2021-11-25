@@ -6,12 +6,9 @@ fn main() {
     It is the same with books.
     What do we seek through millions of pages?";
 
-    let mut line_num: usize = 1;
-    for line in quote.lines() {
+    for (i, line) in quote.lines().enumerate() {
         if line.contains(search_term) {
-            println!("{}: {}", line_num, line);
+            println!("{}: {}", i + 1, line);
         }
-
-        line_num += 1;
     }
 }

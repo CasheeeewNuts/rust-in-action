@@ -1,5 +1,6 @@
 [workspace]
 
 members = [
-    "mandelbrot"
+    "mandelbrot",
+    "grep-lite"
 ]
